@@ -1,2 +1,2 @@
-# xenon-blu.github.io
-# tracyhomelab.dev
+# https://xenon-blu.github.io
+# https://tracyhomelab.dev
