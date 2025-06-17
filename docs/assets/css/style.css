@@ -21,13 +21,14 @@ body {
 }
 
 a {
-    color: #30d330;
+    color: #248f24;
+    font-weight: bold; 
     text-decoration: none;
 }
 
 a:hover {
+    color: #42e042; 
     text-decoration: underline;
-    color: #42e042;
 }
 
 h1, h2 {
