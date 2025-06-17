@@ -1,2 +1,12 @@
 title: Tracy Home Lab
 description: WIP page for Tracy Home Lab
+author: xenon-blu
+keywords: tracy home lab, tech, projects
+language: en
+baseurl: ""
+url: "https://tracyhomelab.dev"
+assets_dir: assets
+cache_bust: true
+deployment:
+  platform: GitHub Pages
+  branch: main
