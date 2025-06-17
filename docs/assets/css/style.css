@@ -1,41 +1,114 @@
-body {
-    background-color: #0d0d0d;
-    color: #30d330;
-    font-family: 'IBM Plex Mono', Consolas, monospace;
-    text-shadow: 0px 0px 1px #30d330;
+:root {
+    --green: #30d330;
+    --green-dark: #248f24;
+    --green-light: #42e042;
+    --bg: #0d0d0d;
+    --scanline-dark: #141414;
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--green);
+    font-family: "IBM Plex Mono", Consolas, monospace;
     padding: 20px;
-    background: repeating-linear-gradient(
+    text-shadow: 0 0 1px var(--green), 0 0 3px rgba(48, 211, 48, 0.3), 0 0 1px black;
+    background-image: repeating-linear-gradient(
         0deg,
-        #0d0d0d 0px,
-        #141414 2px,
-        #0d0d0d 4px
+        var(--bg) 0px,
+        var(--scanline-dark) 2px,
+        var(--bg) 4px
     );
     background-size: 100% 4px;
-    animation: wave 8s infinite linear;
-}
-
-@keyframes wave {
-    from { background-position: 0 0; }
-    to { background-position: 0 -4px; }
-}
-
-a {
-    color: #248f24;
-    font-weight: bold; 
-    text-decoration: none;
-}
-
-a:hover {
-    color: #42e042; 
-    text-decoration: underline;
+    animation: wave 8s linear infinite, flicker 0.15s ease-in-out infinite alternate;
 }
 
 h1, h2 {
-    margin-bottom: 10px;
-    font-weight: 500;
+    margin-bottom: 0.5em;
+    text-shadow: 0 0 1px var(--green), 0 0 3px rgba(48, 211, 48, 0.3), 0 0 1px black;
 }
 
-p, a {
-    font-size: 16px;
+h1 {
+    font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+}
+
+.glow {
+    filter: drop-shadow(0 0 6px var(--green));
+}
+
+a {
+    color: var(--green-dark);
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--green-light);
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background: var(--green);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+a:hover::after {
+    opacity: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 2vh 0;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.footer-container img {
+    height: auto;
+    max-height: clamp(40px, 7vw, 70px);
+    max-width: clamp(50px, 10vw, 100px);
+}
+
+.footer-text {
+    max-width: 60vw;
+    margin: 1vh auto 0;
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    color: #000;
+    text-align: center;
+}
+
+@keyframes wave {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 -8px; }
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.98; }
+    100% { opacity: 1; }
 }
