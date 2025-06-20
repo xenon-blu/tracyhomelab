@@ -90,13 +90,13 @@ footer {
     margin: 0 auto;
 }
 
-.tech-banner svg,
-.tech-banner img[src$=".svg"] {
-    max-height: clamp(24px, 4vw, 40px);
-    max-width: clamp(32px, 6vw, 60px);
-    width: auto;
-    height: auto;
+.tech-banner img {
+    max-height: 40px !important;
+    max-width: 60px !important;
+    width: auto !important;
+    height: auto !important;
     vertical-align: middle;
+    display: inline-block;
 }
 
 .tech-label {
