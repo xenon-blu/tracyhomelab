@@ -82,6 +82,7 @@ a:hover::after {
 }
 
 footer {
+    animation: none !important;
     background: var(--bg);
     color: var(--green);
     text-align: center;
