@@ -1,6 +1,6 @@
 {
   "name": "tracyhomelab",
-  "main": "src/index.html",
+  "main": "src/docs/index.html",
   "compatibility_date": "2022-07-12",
   "workers_dev": false,
 }
