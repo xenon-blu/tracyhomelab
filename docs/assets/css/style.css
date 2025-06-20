@@ -91,6 +91,8 @@ footer {
 }
 
 .tech-banner {
+    animation: none !important;
+    opacity: 1 !important;
     display: flex;
     align-items: center;
     justify-content: center;
