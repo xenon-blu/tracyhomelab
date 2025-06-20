@@ -91,7 +91,6 @@ footer {
 }
 
 .tech-banner img {
-    height: auto;
     max-height: clamp(24px, 4vw, 40px);
     max-width: clamp(32px, 6vw, 60px);
     margin: 0 0.5em;
