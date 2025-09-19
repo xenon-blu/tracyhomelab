@@ -29,7 +29,7 @@ body {
         var(--bg) 4px
     );
     background-size: 100% 4px;
-    animation: wave 8s linear infinite, flicker 0.15s ease-in-out infinite alternate;
+    animation: wave 8s linear infinite;
 
     min-height: 100vh;
     display: flex;
@@ -92,6 +92,7 @@ footer {
 
 .tech-banner {
     animation: none !important;
+    will-change: transform;
     opacity: 1 !important;
     display: flex;
     align-items: center;
@@ -125,10 +126,4 @@ footer {
 @keyframes wave {
     0% { background-position: 0 0; }
     100% { background-position: 0 -8px; }
-}
-
-@keyframes flicker {
-    0% { opacity: 1; }
-    50% { opacity: 0.98; }
-    100% { opacity: 1; }
 }
