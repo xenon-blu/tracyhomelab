@@ -294,15 +294,11 @@ footer::before {
     height: auto;
     flex: 0 1 56px;
     vertical-align: middle;
-    filter: grayscale(1) brightness(0.9) sepia(1) hue-rotate(65deg) saturate(6) brightness(0.8);
-    opacity: 0.75;
-    transition: opacity 0.2s, filter 0.2s, transform 0.2s;
+    transition: transform 0.2s ease;
 }
 
 .tech-banner img:hover {
-    opacity: 1;
     transform: scale(1.12);
-    filter: drop-shadow(0 0 6px var(--green));
 }
 
 .footer-text {
