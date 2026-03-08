@@ -118,7 +118,7 @@ header {
 }
 
 header::before {
-    content: "[ TRACY-LAB OS v2.4.1 ]  MEM: 64K OK  SYS READY ●";
+    content: "IBM PC DOS 3.30  (C)Copyright IBM Corp 1981, 1987   COMPAQ 386/25  640K OK  Microsoft Windows 2.11";
     display: block;
     font-size: 0.68em;
     color: var(--green-dim);
@@ -245,7 +245,7 @@ main > img {
     margin: 1.5em 0;
     border: 1px solid var(--green-dark);
     box-shadow: 0 0 12px rgba(51, 255, 51, 0.12), inset 0 0 20px rgba(0,0,0,0.5);
-    filter: sepia(0.15) hue-rotate(80deg) saturate(1.2) brightness(0.9);
+
 }
 
 main > br {
@@ -278,7 +278,7 @@ footer::before {
     align-items: center;
     justify-content: center;
     gap: 1.2em;
-    background: #000;
+    background: #d8d8d8;
     padding: 1.2em 2em;
     border: 1px solid var(--green-dark);
     border-radius: 0;
