@@ -118,7 +118,7 @@ header {
 }
 
 header::before {
-    content: "IBM PC DOS 3.30  (C)Copyright IBM Corp 1981, 1987   COMPAQ 386/25  640K OK  Microsoft Windows 2.11";
+    content: "IBM PC DOS 3.30  (C)Copyright IBM Corp 1981, 1987   COMPAQ 386/25  640K OK";
     display: block;
     font-size: 0.68em;
     color: var(--green-dim);
