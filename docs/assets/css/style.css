@@ -118,7 +118,7 @@ header {
 }
 
 header::before {
-    content: "tracyhomelab.com | tracyhomelab.dev (C)Copyright TracyHomeLab 2026";
+    content: "tracyhomelab.dev (C)Copyright TracyHomeLab 2026";
     display: block;
     font-size: 0.68em;
     color: var(--green-dim);
