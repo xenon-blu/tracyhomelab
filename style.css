@@ -1,0 +1,23 @@
+.footer-text {
+    /* existing styles */
+}
+
+.logo-badge {
+    background: #ffffff;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    display: inline-block;
+    box-shadow: 0 0 12px rgba(51, 255, 51, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logo-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(51, 255, 51, 0.35);
+}
+
+.logo-badge img {
+    max-height: 80px;
+    width: auto;
+    display: block;
+}
